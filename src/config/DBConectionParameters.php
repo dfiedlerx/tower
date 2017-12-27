@@ -8,6 +8,7 @@
 
 //Caso seja ambiente de desenvolvimento
 if (ENVIRONMENT){
+
     //Tipo do Banco de dados.
     define ('DB_TYPE', 'pgsql');
     //Nome da Base de dados.
@@ -18,9 +19,11 @@ if (ENVIRONMENT){
     define ('DB_USER', 'postgres');
     //Senha de acesso a Base de Dados.
     define ('DB_PASS', 'admin');
+
 }
 //Caso seja ambiene de produção.
 else{
+
      define ('DB_TYPE', '?');
     //Nome da Base de dados.
     define ('DB_NAME', '?');
@@ -29,7 +32,8 @@ else{
     //Usuário de acesso a Base de Dados.
     define ('DB_USER', '?');
     //Senha de acesso a Base de Dados.
-    define ('DB_PASS', '?');  
+    define ('DB_PASS', '?');
+
 }
     
  
