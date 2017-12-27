@@ -44,7 +44,7 @@
 			
 			}
 
-			return FALSE;
+			return false;
 
 		}	
 
@@ -92,10 +92,11 @@
     	protected function isConditionEmptyOrInvalid ($conditionTerms) {
 
         	return 
-        	$conditionTerms == '' || 
-        	$conditionTerms == array() || 
-        	empty($conditionTerms) || 
-        	!is_array($conditionTerms);
+        	    $conditionTerms == '' ||
+        	    $conditionTerms == array() ||
+        	    empty($conditionTerms) ||
+        	    !is_array($conditionTerms) ||
+                is_null ($conditionTerms);
 
     	}    
 

@@ -71,6 +71,7 @@ abstract class DATABASE_QUERY_GENERATE extends DATABASE_RUN{
     private function generateConditionTerms($terms) {
 
         $preString = '';
+
         if (!empty($terms)){
 
             foreach ($terms as $currentTerm) {
@@ -79,7 +80,8 @@ abstract class DATABASE_QUERY_GENERATE extends DATABASE_RUN{
 
        		}
 
-        }  
+        }
+
         return $preString;
 
     }
